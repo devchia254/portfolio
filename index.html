@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Layout Master</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <nav> 
+    <div class="navbar-mobile blueGrade">
+      <a><h2>ALEXANDER CHIA</h2></a>
+      <div class="menu-icon" onclick="menuBtn(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+    </div>
+    <div class="navbar-main blueGrade" id="sideNav">
+    <!-- Header -->
+      <div class="circular_img">
+        <img src="assets/img/prof_pic1.jpg" alt="profile pic"></img>
+      </div>
+      <div class="navlinks">
+          <a><i class="fas fa-home"></i>HOME</a>
+          <a><i class="fas fa-user-tie"></i>ABOUT ME</a>
+          <a><i class="fas fa-file-alt"></i>RESUME</a>
+          <a><i class="fas fa-pencil-ruler"></i>PROJECTS</a>
+          <a><i class="fas fa-address-card"></i>CONTACT</a>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container">
+
+    <section id="home">
+      <div class = "flex">
+          <h1 class = "">Hello, I am Alex Chia. <br> I am a Web Developer.</h1>
+          <h2>Just Kidding.......</h2>
+      </div>
+    </section>
+
+    <section id="aboutMe">
+      <h1 class="section-title">About Me</h1>
+      <p class="about"> Hi! My name is Alexander Chia and currently working in an aviation company performing admin duties. I’m interested on pursuing a career in Web Development.
+      <br><br>
+      I’m not unfamiliar with coding as my educational background has been involved with computer science related modules. During my past time, I have dedicated myself to focus in Web Development, which in time, has sparked a desire to learn more programming in general.
+      <br><br>
+      I have developed a strong foundation on learning the three pillars of Web Development – HTML, CSS &and JavaScript.</p>
+    </section>
+
+    <section id="resume">
+
+      <h1 class="section-title">Resume</h1>
+
+        <div class="resume-grid">
+
+          <div class="resume-box"> 
+            <h2 class="resume-heading">Experience</h2>
+            
+            <div class="resume-content">
+              <h3>Corporate Officer / PA to CEO</h3>
+              <p class="jobInfo"> Sabah Air Aviation Sdn. Bhd.
+                <br>Feb 2017 – Present | Kota Kinabalu, Sabah
+              </p>
+              <p>Provide assistance and administrative support for the CEO and to ensure effective communication between the CEO and the Management. Monitoring the performance and budget of each department through Monthly Reports. Record the minutes of the Management meetings. Responsible with reviewing the Business Plan to reflect the Company's direction.</p>
+            </div>
+
+            <div class="resume-content">
+              <h3>Casual Assistant & Leisure Assistant (Part-Time)</h3>
+              <p class="jobInfo">Keele Hall & Keele Sports Leisure Centre
+              <br>Mar 2014 – Dec 2016 | Keele, United Kingdom</p>
+              <p>Worked at a banqueting venue then later at a sports leisure centre during my study at university. Responsibilities involved general maintenance of the workplace but also required a practise of customer service for both satisfying the customer and attracting new clients for the gym.</p>
+            </div>
+            <div class="resume-content">
+              <h3>Sales Representative (Intern)</h3>
+              <p class="jobInfo"> Champions Life Academy 
+                <br> Summer 2013 | London, United Kingdom</p>
+              <p>A 6-week undergraduate sales training internship that uses door-to-door fundraising as a platform to learn face-to-face sales skills. Achieved the National Sales Qualification Pass and Marathon club award (Work 45+ Hrs/wk).</p>
+            </div>
+          </div>
+
+          <div class="resume-box"> 
+            <h2 class="resume-heading">Education</h2>
+            <div class="resume-content">
+              <h3>University of Keele | Keele, United Kingdom</h3>
+              <p>2012 – 2016</p>
+              <ul>
+                <li>Msc in Information Technology and Management –
+                    Achieved grade 2:1 (Merit award)</li>
+                <li>Dual Honours (Bsc) in Creative Computing and
+                    International Business – Achieved grade 2:2</li>
+              </ul>
+            </div>
+            <div class="resume-content">
+              <h3>The Aga Khan Academy | Mombasa, Kenya</h3>
+              <p>2008 – 2012</p>
+              <ul>
+                <li>International Baccalaureate: English A Standard Level
+                    (5), Economics Standard Level (5), French B Standard
+                    Level (4).</li>
+                <li>IGCSEs: 9 subjects including Mathematics (A), First
+                    Language English (B) and French Second Language (B).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume-box">
+            <h2 class="resume-heading">Volunteering</h2>
+            <div class="resume-content">
+              <h3>YMM Penampang</h3>
+              <p>Member
+              <br>Sep 2017 - Present | Kota Kinabalu, Sabah | <a href="http://ymm.org.my/" target="_blank">Official Website</a> or <a href="https://www.facebook.com/YMM-Penampang-497587763614027/" target="_blank"><i class="fab fa-facebook-square"></a></i></p>
+              <p>Became a member of the NGO Group – Youth Malaysian Movement (YMM) for the Penampang area, since Sep 2017. Assisted in conducting events such as blood donation campaigns, community runs and raising awareness. 
+              <br> E.g. for Queen Elizabeth Hospital, we managed to collect 22 Organ Donors and 39 Blood Donations for the Hai-O Blood Donation & Organ Donor Campaign on the 25th Nov 2017</p>
+            </div>
+          </div>
+
+          <div class="resume-box"> 
+            <h2 class="resume-heading">Skills</h2>
+            <div class="resume-content">
+              <ul class="flex-list">
+                <li><img src="assets/img/html.png" alt="html"></li>
+                <li><img src="assets/img/css.png" alt="css"></li>
+                <li><img src="assets/img/bootstrap.png" alt="bootstrap"></li>
+                <li><img src="assets/img/js.png" alt="javascript"></li>
+                <li><img src="assets/img/react.png" alt="react"></li>
+                <li><img src="assets/img/redux.png" alt="redux"></li>
+                <li><img src="assets/img/git.png" alt="git"></li>
+                <li><img src="assets/img/nodejs.png" alt="nodejs"></li>
+                <li><img src="assets/img/pgsql.png" alt="postgresql"></li>
+              </ul>
+            </div>
+            
+          </div>
+
+        </div>
+
+    </section>
+
+    <section id="projects">
+      <div class = "projects-grid">
+        <h1 class="section-title gridTitle">Projects</h1>
+        <a><img src="assets/img/data_storage_2_2.png" alt="data storage"></img></a>
+        <a><img src="assets/img/desktop_analytics_2.png" alt="desktop analytics"></img></a>
+        <a><img src="assets/img/files_2.png" alt="files"></img></a>
+        <a><img src="assets/img/monitor_coding_2.png" alt="monitor coding"></img></a>
+        <a><img src="assets/img/monitor_settings_2.png" alt="monitor settings"></img></a>
+        <a><img src="assets/img/server_2_2.png" alt="server2"></img></a>
+        <a><img src="assets/img/server_3.png" alt="server3"></img></a>
+        <a><img src="assets/img/server_safe_2.png" alt="server safe"></img></a>
+      </div>
+    </section>
+    <section id="contact"><h1 class="section-title">Contact</h1></section>
+  </section>
+  <script src="assets/js/script.js" type="text/javascript"></script>
+
+
+</body>
+</html>
