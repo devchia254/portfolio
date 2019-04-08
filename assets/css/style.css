@@ -232,6 +232,10 @@ section:not(:first-child) {
   background: white;
 }
 
+.dates > span {
+  float:right;
+}
+
 /* .timeline-item:last-child {
   border-image: linear-gradient(to bottom, #3C85FF 60%, BLACK) 50 100%;
 } */
