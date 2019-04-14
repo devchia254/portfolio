@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300|Montserrat');
 
-
-* {
+@-ms-viewport{
+  width: device-width;
+}
+*, ::after, ::before {
   box-sizing: border-box;
   }
 
@@ -52,6 +54,56 @@ a {
 .dates {
   font-size: 0.8em;
 }
+
+/* Clip animation */
+.cd-headline {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.cd-headline.clip span {
+  display: inline-block;
+  padding: .2em 0;
+}
+.cd-headline.clip .cd-words-wrapper {
+  overflow: hidden;
+  vertical-align: top;
+}
+.cd-headline.clip .cd-words-wrapper::after {
+  /* line */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background-color: #aebcb9;
+}
+.cd-headline.clip b {
+  opacity: 0;
+}
+.cd-headline.clip b.is-visible {
+  opacity: 1;
+}
+
+
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: left;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+
 
 /****************** Colours **********************/
 .blueGrade {
@@ -219,13 +271,14 @@ section:not(:first-child) {
     margin-top: 0;
 }
 
-.timeline-item::before {
+/* Circle timeline */
+.timeline-item::before { 
   width: 15px;
   height: 15px;
   display: block;
   top: 1em;
   position: relative;
-  left: -30.5px;
+  left: -28.5px;
   border-radius: 10px;
   content: '';
   border: 2px solid #3C85FF;
