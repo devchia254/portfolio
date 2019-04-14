@@ -178,7 +178,7 @@ a {
 */
 }
 
-.navbar-mobile a {
+.navbar-mobile {
   font-size: 1.1em;
 }
 
@@ -363,14 +363,29 @@ ul.flex-list li > img {
     position: fixed; /*Fixed makes it stay at the top*/
 /*  background: yellow;*/      
     overflow: hidden;
-    display: block;
     z-index: 1;
   }
 
-  .navbar-mobile a {
-    display: block;
-    float: left;
+  .navbar-mobile {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    align-self: center;
   }
+
+  .navmobile-title, .menu-icon {
+    align-self: center;
+  }
+
+  .navmobile-title {
+    flex: 1 1 auto;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .menu-icon {
+    margin: 5px;
+  }
+
 
 
 
@@ -404,5 +419,12 @@ ul.flex-list li > img {
     transform: rotate(45deg) translate(-8px, -8px);
   }
 
+  /* Home title reduce */
+  .cd-headline {
+    font-size: 2rem;
+    line-height: 1;
+  }
 }
+
+
   
