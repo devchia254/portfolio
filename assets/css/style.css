@@ -55,14 +55,40 @@ a {
   font-size: 0.8em;
 }
 
-/* Clip animation */
+.flex {
+    height: 100%;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    /* Create space in the Cover section */
+  }
+
+/* cd-headline properties */
 .cd-headline {
   font-size: 3rem;
-  line-height: 1.2;
+  line-height: 1;
 }
 
-.cd-headline.clip span {
+.cd-words-wrapper {
   display: inline-block;
+  position: relative;
+  text-align: center;
+}
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+}
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+/* Clip animation */
+.cd-headline.clip span {
+  display: relative;
   padding: .2em 0;
 }
 .cd-headline.clip .cd-words-wrapper {
@@ -87,21 +113,7 @@ a {
 }
 
 
-.cd-words-wrapper {
-  display: inline-block;
-  position: relative;
-  text-align: left;
-}
-.cd-words-wrapper b {
-  display: inline-block;
-  position: absolute;
-  white-space: nowrap;
-  left: 0;
-  top: 0;
-}
-.cd-words-wrapper b.is-visible {
-  position: relative;
-}
+
 
 
 
@@ -226,12 +238,6 @@ section:not(:first-child) {
   width: auto;
 }  
 
-.flex {
-/*height: 100vh;*/    
-  display: flex;
-  /* Create space in the Cover section */
-}
-
 .resume-grid {
   display: grid;
   grid-gap: 50px;
@@ -285,9 +291,9 @@ section:not(:first-child) {
   background: white;
 }
 
-.dates > span {
+/* .dates > span {
   float:right;
-}
+} */
 
 /* .timeline-item:last-child {
   border-image: linear-gradient(to bottom, #3C85FF 60%, BLACK) 50 100%;
@@ -365,6 +371,8 @@ ul.flex-list li > img {
     display: block;
     float: left;
   }
+
+
 
   /****************** Menu Icon **********************/
   .menu-icon {
