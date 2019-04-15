@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Roboto|Raleway');
 
 @-ms-viewport{
   width: device-width;
 }
+
 *, ::after, ::before {
   box-sizing: border-box;
   }
@@ -13,11 +14,13 @@ body {
 */}
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 a, p, li {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
+  color: rgba(0, 0, 0, 0.87);
 }
 
 li {
@@ -152,7 +155,6 @@ a {
   font-size: 1em;
 /*  color: white;*/
   color: black;
-  font-weight: bold;
 }
 
 .navbar-main .navlinks a i {
