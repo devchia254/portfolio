@@ -467,6 +467,7 @@ ul.flex-list li > img {
 
   .bg {
     background-position: center;
+    background-size: auto 70%;
   }
 
   .flex {
