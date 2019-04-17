@@ -61,27 +61,22 @@ jQuery(document).ready(function($){
 		revealAnimationDelay = 1500;
 	
 	initHeadline();
-	
 
 	function initHeadline() {
 		//initialise headline animation
 		animateHeadline($('.cd-headline'));
 	}
 
-
 	function animateHeadline($headlines) {
 		var duration = animationDelay;
 		$headlines.each(function(){
 			var headline = $(this);
 			
-      
       if (headline.hasClass('clip')){
 				var spanWrapper = headline.find('.cd-words-wrapper'),
 					newWidth = spanWrapper.width() + 10
 				spanWrapper.css('width', newWidth);
-      } 
-      
-      ;
+      };
 
 			//trigger animation
 			setTimeout(function(){ hideWord( headline.find('.is-visible').eq(0) ) }, duration);
@@ -91,17 +86,14 @@ jQuery(document).ready(function($){
 	function hideWord($word) {
 		var nextWord = takeNext($word);
 		
-    
     if($word.parents('.cd-headline').hasClass('clip')) {
+			
 			$word.parents('.cd-words-wrapper').animate({ width : '2px' }, revealDuration, function(){
 				switchWord($word, nextWord);
 				showWord(nextWord);
 			});
 
-    } 
-    
-    
-    else {
+    } else {
 			switchWord($word, nextWord);
 			setTimeout(function(){ hideWord(nextWord) }, animationDelay);
 		}
@@ -116,14 +108,13 @@ jQuery(document).ready(function($){
 		}
 	}
 
-
 	function takeNext($word) {
 		return (!$word.is(':last-child')) ? $word.next() : $word.parent().children().eq(0);
 	}
-
 
 	function switchWord($oldWord, $newWord) {
 		$oldWord.removeClass('is-visible').addClass('is-hidden');
 		$newWord.removeClass('is-hidden').addClass('is-visible');
 	}
+	
 });
