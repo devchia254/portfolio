@@ -10,8 +10,13 @@
 
 body {
   margin: auto 0;
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);
+  /*z-index: -1;*/
 /*  box-sizing: border-box;
-*/}
+*/
+
+}
 
 h1, h2, h3, h4, h5 {
   font-family: 'Roboto', sans-serif;
@@ -65,6 +70,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    padding-right: 40%;
     /* Create space in the Cover section */
   }
 
@@ -228,12 +234,12 @@ section {
 /*  box-sizing: border-box;*/  
 padding: 30px 40px 20px; /* Padding for the inner section*/
 /*background: white;*/
-background-color: #B721FF;
-background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);
+/*background-color: #B721FF;
+background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);*/
 /*box-shadow: 0 3px 10px #0c6267;*/    
 
--webkit-animation: fadeEffect 3.5s;
-animation: fadeEffect 3.5s;
+-webkit-animation: fadeEffect 3s;
+animation: fadeEffect 3s;
 }
 
 section:not(:first-child) {
@@ -255,18 +261,22 @@ section:not(:first-child) {
 #home {
   height: 100vh;
   width: auto;
+  
+  /*background-image: url(https://www.birds.com/wp-content/uploads/home/bird4.jpg);*/
+      /*background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
 }  
 
-/* #myVideo {
-  position: fixed;
-  top: 50%; left: 50%;
-  z-index: 0;
-  min-width: 100vw;
-  min-height: 100vh;
-  width: auto;
-  height: auto;
-  transform: translate(-50%, -50%);
-} */
+.bg {
+  /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.png);*/
+  background-image: url(../img/bg.png);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: auto 90%;
+}
+
 
 .resume-grid {
   display: grid;
@@ -277,7 +287,7 @@ section:not(:first-child) {
   padding: 5px;
   margin: 0;
   /* border-radius: 0.25em; */
-  color: black;
+  /*color: black;*/
 }
 
 .resume-box {
@@ -454,6 +464,15 @@ ul.flex-list li > img {
     font-size: 2rem;
     line-height: 1;
   }
+
+  .bg {
+    background-position: center;
+  }
+
+  .flex {
+    padding-right: 0;
+  }
+
 }
 
 
