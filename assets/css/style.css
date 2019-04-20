@@ -388,11 +388,10 @@ ul.flex-list li > img {
   /* grid-gap: 50px; */
 }
 
-.gridTitle  {
+/* .gridTitle  {
   grid-column-start: 1;
   grid-column-end: -1;
-  /* align-self:center; */
-}
+} */
 
 .card {
   background-color: white;
