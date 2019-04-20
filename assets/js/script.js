@@ -3,11 +3,11 @@
 
   const navBar = document.getElementById("sideNav");
   const style = window.getComputedStyle(navBar);
-  const left = style.getPropertyValue("left");
+	const left = style.getPropertyValue("left");
 
   if (window.matchMedia("(max-width: 700px)").matches && left == "-210px") { // If media query/ viewport width is less than 700px and navbar is outside viewport
     e.classList.toggle("change"); // Toggle menu-icon animation
-    navBar.style.left = "0px"; // Shift navbar back to viewport
+		navBar.style.left = "0px"; // Shift navbar back to viewport
   } else {
     e.classList.toggle("change");
     navBar.style.left = "-210px";
