@@ -45,6 +45,8 @@ a {
   font-size: 4em;
   border-bottom: 2px solid black;
   color: white;
+  text-align: center;
+
 }
 
 .about {
@@ -240,6 +242,8 @@ background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);*/
 
 -webkit-animation: fadeEffect 3s;
 animation: fadeEffect 3s;
+
+min-height: 100vh;
 }
 
 section:not(:first-child) {
@@ -277,6 +281,15 @@ section:not(:first-child) {
   background-size: auto 90%;
 }
 
+.section-container {
+  padding: 10px 20px 10px 20px;
+}
+
+.whitecard {
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  padding: 10px 20px 10px 20px;
+}
 
 .resume-grid {
   display: grid;
@@ -293,8 +306,8 @@ section:not(:first-child) {
 .resume-box {
 /*  box-shadow: 1px 1px 2px grey;
 */
-  display: grid;
-  grid-gap: 25px;
+  /* display: grid; */
+  /* grid-gap: 25px; */
 }
 
 .resume-content {
@@ -363,7 +376,7 @@ ul.flex-list li > img {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(auto, 1fr)); 
+  /* grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));  */
   /* auto in the minmax allows the size of each card to determine the minimum size */
   grid-gap: 1.5rem;
 
@@ -379,13 +392,12 @@ ul.flex-list li > img {
   grid-column-start: 1;
   grid-column-end: -1;
   /* align-self:center; */
-  justify-self: center;
 }
 
 .card {
   background-color: white;
   /* border: 1px solid #d3d3d3; */
-  padding: 10px;
+  /* padding: 10px; */
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
@@ -403,6 +415,30 @@ ul.flex-list li > img {
 
   /* border-radius: 15px; */
   /* box-shadow: 0 3px 10px #0c6267; */ 
+}
+
+.card-content {
+  padding: 0.5rem;
+}
+
+.pill {
+  background-color: #21D4FD;
+  background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  /* margin: 4px 2px; */
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+button.pill:hover{
+  background-image: linear-gradient(19deg, rgba(183, 33, 255, 0.4) 0%, rgba(33, 212, 253, 0.4) 100%);
+  color:rgba(0, 0, 0, 0.9);;
 }
 
 
