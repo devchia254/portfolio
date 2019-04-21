@@ -243,7 +243,7 @@ background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);*/
 -webkit-animation: fadeEffect 3s;
 animation: fadeEffect 3s;
 
-min-height: 100vh;
+/* min-height: 100vh; */
 }
 
 section:not(:first-child) {
@@ -376,22 +376,9 @@ ul.flex-list li > img {
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* grid-template-rows: repeat(auto-fill, minmax(auto, 1fr));  */
-  /* auto in the minmax allows the size of each card to determine the minimum size */
   grid-gap: 1.5rem;
 
-  /* grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-  grid-template-rows: 20vh repeat(3, 400px);  */
-  /*1st value sets the height of the first row, which is the .gridTitle*/
-  /* grid-auto-rows:400px;  */
-  /* Implicit Grid Layout - Sets the rows to a fixed height of 200px. So if viewport becomes more than 3 rows (Explicit Grid Layout), then all items will be fixed at 200px*/
-  /* grid-gap: 50px; */
 }
-
-/* .gridTitle  {
-  grid-column-start: 1;
-  grid-column-end: -1;
-} */
 
 .card {
   background-color: white;
@@ -403,7 +390,6 @@ ul.flex-list li > img {
 .card-img {
   /* width: auto;
   height:300px; */
-
 }
   
 .card-img > img {
@@ -533,6 +519,10 @@ button.pill:hover{
     padding-right: 0;
   }
 
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+  }
 }
 
 
