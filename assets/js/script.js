@@ -33,7 +33,7 @@ x.addListener(responseNav); // Attach listener function on state changes
 //jQuery Function for transitioning between sections of the container
 $(document).ready(function() { 
 
-	(function ($) { 
+	(function ($) {
 		$('.navbar-main .navlinks').find('> a:eq(0)').addClass('active'); //Adds 
 
     $('body nav .navbar-main .navlinks a').click(function (g) { 
