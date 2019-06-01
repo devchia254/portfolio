@@ -31,26 +31,26 @@ responseNav(x); // Call listener function at run time
 x.addListener(responseNav); // Attach listener function on state changes
 
 //jQuery Function for transitioning between sections of the container
-$(document).ready(function() { 
+// $(document).ready(function() { 
 
-	(function ($) {
-		$('.navbar-main .navlinks').find('> a:eq(0)').addClass('active'); //Adds 
+// 	(function ($) {
+// 		$('.navbar-main .navlinks').find('> a:eq(0)').addClass('active'); //Adds 
 
-    $('body nav .navbar-main .navlinks a').click(function (g) { 
-			var body = $(this).closest('body'), 
-          index = $(this).closest('.navbar-main .navlinks a').index();
+//     $('body nav .navbar-main .navlinks a').click(function (g) { 
+// 			var body = $(this).closest('body'), 
+//           index = $(this).closest('.navbar-main .navlinks a').index();
 
-			body.find('nav .navbar-main .navlinks > a').removeClass('active');
-      $(this).closest('a').addClass('active');
+// 			body.find('nav .navbar-main .navlinks > a').removeClass('active');
+//       $(this).closest('a').addClass('active');
 
-      body.find('.container').find('section').not('section:eq(' + index + ')').slideUp(); // Hide the matched elements by sliding up.
-      body.find('.container').find('section:eq(' + index + ')').slideDown(); // Display the matched elements by sliding down.
+//       body.find('.container').find('section').not('section:eq(' + index + ')').slideUp(); // Hide the matched elements by sliding up.
+//       body.find('.container').find('section:eq(' + index + ')').slideDown(); // Display the matched elements by sliding down.
 			
-			g.preventDefault();
-		}); 
-	})(jQuery);
+// 			g.preventDefault();
+// 		}); 
+// 	})(jQuery);
 
-});
+// });
 
 //jQuery function for Home Section title animation
 jQuery(document).ready(function($){

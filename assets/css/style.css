@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Roboto+Slab&display=swap');
 
 @-ms-viewport{
   width: device-width;
@@ -10,47 +10,22 @@
 
 body {
   margin: auto 0;
-  background-color: #21D4FD;
-  background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);
-  /*z-index: -1;*/
-/*  box-sizing: border-box;
-*/
-
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Slab', serif;  
   color: rgba(0, 0, 0, 0.9);
 }
 
 a, p, li {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: rgba(0, 0, 0, 0.8);
 }
 
-li {
-  font-size: 16px;
-}
-
-a {
-  font-weight: 500;
-}
-
-/* h2 {
-  font-family: 'Montserrat', sans-serif;
-} */
-
 .section-title {
-  font-weight: 500;
-  font-size: 4em;
-  border-bottom: 2px solid black;
-  color: white;
+  font-size: 2em;
   text-align: center;
 
-}
-
-.about {
-  font-size: 22px;
 }
 
 .job-title {
@@ -63,14 +38,13 @@ a {
 }
 
 
-
 .flex {
     height: 100%;    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    padding-right: 40%;
+    /* padding-right: 40%; */
     /* Create space in the Cover section */
   }
 
@@ -78,7 +52,7 @@ a {
 .cd-headline {
   font-size: 3rem;
   line-height: 1;
-  color: white;
+  color: black;
   text-shadow: 4px 4px 4px rgba(0, 0, 0,0.2);
 }
 
@@ -125,14 +99,10 @@ a {
 }
 
 
-
-
-
-
 /****************** Colours **********************/
 .blueGrade {
   /* background-image: linear-gradient(135deg, #04ffff 20%, #ff2ce2); */
-  background: #3C85FF;
+  background: #6F77EF;
 }
 
 /****************** Side Navbar **********************/
@@ -152,7 +122,7 @@ a {
   /*box-shadow: 0 3px 10px grey;*/
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16);
   /*, 0 2px 10px 0 rgba(0,0,0,0.12);*/
-  background: #fff;
+  background: #6F77EF;
 }
 
 .navbar-main .navlinks {
@@ -165,7 +135,7 @@ a {
   text-decoration: none;
   font-size: 1em;
 /*  color: white;*/
-  color: black;
+  color: white;
 }
 
 .navbar-main .navlinks a i {
@@ -231,48 +201,20 @@ a {
 }
 
 section {
-/*  box-sizing: border-box;*/  
 padding: 30px 40px 20px; /* Padding for the inner section*/
-/*background: white;*/
-/*background-color: #B721FF;
-background-image: linear-gradient(19deg, #B721FF 0%, #21D4FD 100%);*/
-/*box-shadow: 0 3px 10px #0c6267;*/    
-
--webkit-animation: fadeEffect 3s;
-animation: fadeEffect 3s;
-
-/* min-height: 100vh; */
+min-height: 100vh;
 }
 
-section:not(:first-child) {
-  display: none;
-}
-
-/* Fade in tabs */
-@-webkit-keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes fadeEffect {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 
 /********************* Contents **********************/
 #home {
   height: 100vh;
   width: auto;
-  
-  /*background-image: url(https://www.birds.com/wp-content/uploads/home/bird4.jpg);*/
-      /*background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
 }  
 
 .bg {
   /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/bg.png);*/
-  background-image: url(../img/bg.png);
+  /* background-image: url(../img/bg.png); */
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -287,6 +229,7 @@ section:not(:first-child) {
   background-color: white;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
   padding: 10px 20px 10px 20px;
+  border-radius: 10px;
 }
 
 .resume-grid {
@@ -353,14 +296,6 @@ section:not(:first-child) {
   border: 2px solid rgba(0, 0, 0, 0.9);
   background: white;
 }
-
-/* .dates > span {
-  float:right;
-} */
-
-/* .timeline-item:last-child {
-  border-image: linear-gradient(to bottom, #3C85FF 60%, BLACK) 50 100%;
-} */
 
 .flex-list {
   display:flex;
